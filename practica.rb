@@ -19,22 +19,39 @@
     #end
 
 
- puts "escriba un nombre"
+ #puts "escriba un nombre"
 
-    name = gets.chomp.to_s
+#    name = gets.chomp.to_s
 
 
-   case name 
+  # case name 
    
     
 
- when "jose" 
+ #when "jose" 
 
-        puts " #{name} es padre de jesus."
+  #      puts " #{name} es padre de jesus."
 
- when "maria"
+ #when "maria"
       
-       puts "#{name}es la madre de jesus}"
+#       puts "#{name}es la madre de jesus}"
 
- else  puts "no se cumplio ninguna condicion"
- end
+ #else  puts "no se cumplio ninguna condicion"
+# end
+
+
+def unmetodo 
+    puts "comienzo del metodo"
+     
+    yield
+    yield
+puts "final del metodo"
+
+end
+
+unmetodo do 
+  puts "soy un bloque que esta afuera pero me imprimo dentro del metodo"
+
+end
+
+
