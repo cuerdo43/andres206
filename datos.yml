@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+ 
+  pool: 5
+  username: myapp
+  password: password1
+
+development:
+  <<: *default
+  database: 
+
+test:
+  <<: *default
+  database: myapp_test
+
+production:
+  <<: *default
+  database: myapp_production
+rake db: setup
